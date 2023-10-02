@@ -1,0 +1,12 @@
+{
+    "name": "kakashi",
+    "version": "0.0.1",
+    "private": "false",
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "husky": "~8.0.3",
+        "lint-staged": "~13.2.2"
+    }
+}
