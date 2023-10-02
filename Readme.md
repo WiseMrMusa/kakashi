@@ -16,17 +16,23 @@ bun install
 
 To setup the local network, you need to first install katana:
 
-``` make install-katana ```
+``` 
+make install-katana 
+```
 
 ## Starknet Foundry Installation
 
 To install Starknet Foundry, run:
 
-``` make install-snfoundry ```
+``` 
+make install-snfoundry 
+```
 
 Then you can run the local node via:
 
-``` make start-katana ```
+``` 
+make start-katana 
+```
 
 
 Made in Lagos, Nigeria
