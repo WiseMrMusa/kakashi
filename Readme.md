@@ -9,7 +9,6 @@ to set up, run:
 ``` 
 git clone https://github.com/WiseMrMusa/kakashi && \
 bun install 
-
 ```
 
 ## To setup the Local Network
@@ -30,7 +29,7 @@ make install-snfoundry
 
 Then you can run the local node via:
 
-```makefile
+```
 make start-katana 
 ```
 
