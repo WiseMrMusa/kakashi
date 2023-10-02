@@ -30,7 +30,7 @@ make install-snfoundry
 
 Then you can run the local node via:
 
-``` 
+```makefile
 make start-katana 
 ```
 
