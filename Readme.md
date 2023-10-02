@@ -2,6 +2,12 @@
 
 The sensei to learn and build Starknet Dapp
 
+In case you don't have, it's good if you start by installing bun. It's all to speed the process and have a great developer experience
+
+```
+curl -fsSL https://bun.sh/install | bash
+```
+
 ## Project Setup
 
 to set up, run:
