@@ -11,3 +11,9 @@ starknet = "2.2.0"
 [[target.starknet-contract]]
 casm = true
 # foo = { path = "vendor/foo" }
+
+
+[tool.sncast.myprofile]
+account = "user"
+accounts-file = "./starkli-katana/katana_account.json"
+url = "http://127.0.0.1:5050/rpc"
