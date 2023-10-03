@@ -29,18 +29,18 @@ This template is made up of different technologies built on Starknet. You only h
 
 1. Install Katana
    Katana is the local node we'll be deploying our project on. If you have it installed, you can skip it. However, run this command:
-    ``` 
-    make install-katana 
+    ```bash
+    make install katana 
     ```
 2. Install Starknet Foundry
     To install Starknet Foundry, run:
-    ``` 
-    make install-snfoundry 
+    ```bash 
+    make install snfoundry 
     ```
 3. Install Starkli
     To install starkli, run:
-    ```
-    make install-starkli
+    ```bash
+    make install starkli
     ```
 
 ## Running Project on Local Node
@@ -51,7 +51,7 @@ This template is made up of different technologies built on Starknet. You only h
    ```
 2. Create an account from wallet
    ```bash
-   make create signer ACC_NO=<NO>
+   make create signer ACC_NO="<NO>"
    ```
    NO: The account number you're creating
    It will request for private key which you can make available from katana
@@ -69,7 +69,7 @@ This template is made up of different technologies built on Starknet. You only h
     ```
     Copy the declared hash of the contract
 3. Deploy:
-   ```bash"
+   ```bash
    make deploy CLASS_HASH="<CONTRACT_CLASS_HASH>"
    ```
 
