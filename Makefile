@@ -1,3 +1,9 @@
+include .env.local
+
+use-env:
+	echo ${STARKNET_ACCOUNT}
+
+
 start katana:
 	katana --accounts 3 --seed 0 --gas-price 250
 
@@ -9,16 +15,17 @@ declare:
 	cd ./packages/snfoundry/ && \
 	starkli declare \
 	$(TARGET_SIERA) \
-	--compiler-version 2.1.0 --rpc http://0.0.0.0:5050 \
-	--account ./starkli-katana/katana_account.json \
-	--keystore ./starkli-katana/katana_key.json
+	--compiler-version 2.1.0 --rpc ${STARKNET_RPC} \
+	--account ${STARKNET_ACCOUNT} \
+	--keystore ${STARKNET_KEYSTORE}
+
 
 deploy:
 	cd ./packages/snfoundry/ && \
 	starkli deploy $(CLASS_HASH) \
-	--rpc http://0.0.0.0:5050 \
-	--account ./starkli-katana/katana_account.json \
-	--keystore ./starkli-katana/katana_key.json
+	--rpc ${STARKNET_RPC}  \
+	--account ${STARKNET_ACCOUNT} \
+	--keystore ${STARKNET_KEYSTORE}
 	# starkli deploy $(CLASS_HASH) $(CTOR_ARGS) \
 
 test:
